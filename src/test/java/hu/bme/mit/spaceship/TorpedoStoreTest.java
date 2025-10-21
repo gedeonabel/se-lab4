@@ -2,7 +2,7 @@ package hu.bme.mit.spaceship;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class TorpedoStoreTest {
@@ -11,7 +11,7 @@ class TorpedoStoreTest {
     private TorpedoStore stable_store;
     private TorpedoStore fail_store;
 
-    @BeforeAll
+    @BeforeEach
     public void init() {
         this.empty_store = new TorpedoStore(0);
         this.stable_store = new TorpedoStore(10,0);
